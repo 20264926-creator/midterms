@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title tag as specified in Annex B -->
-    <title>Jhazianne's Creatives</title>
+    <title>Mikaella's Creatives</title>
     <style>
         /* General Page Styling */
         * {
