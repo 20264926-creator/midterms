@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title tag as specified in Annex B -->
+    <title>Jhazianne's Creatives</title>
+    <style>
+        /* General Page Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 20px 0 10px 0;
+            text-align: center;
+        }
+
+        .brand-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .brand-logo {
+            width: 32px;
+            height: 32px;
+            fill: #ffffff;
+        }
+
+        header h1 {
+            font-size: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Bar - Dark navigation bar with HOME, ABOUT, GALLERY, CONTACT */
+        nav {
+            background-color: #111111;
+            padding: 12px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00adb5;
+        }
+
+        /* Main Content Container / Card Area */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Centralized White Content Card with Rounded Corners */
+        .card {
+            background-color: #ffffff;
+            max-width: 650px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Creator Image - Centered, circular, dark border */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%; /* Makes image circular */
+            border: 4px solid #1a1a1a; /* Dark border */
+            object-fit: cover;
+            margin-bottom: 25px;
+        }
+
+        .card h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        /* Three distinct paragraphs describing brand's vision and innovation */
+        .card p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #555555;
+            font-size: 15px;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Footer - Black footer with specified copyright text */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="brand-container">
+            <!-- Brand Logo (SVG) -->
+            <svg class="brand-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <!-- Replace [Bacala] with your actual last name -->
+            <h1>BACALA CREATIVES</h1>
+        </div>
+        
+        <!-- Navigation Section -->
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Centralized Content Card -->
+        <div class="card">
+            <!-- Circular Profile Picture -->
+            <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" 
+                alt="Creator Profile Picture" 
+                class="profile-img"
+            >
+            
+            <h2>About the Collection</h2>
+            
+            <p>
+                At Mikaella's Creatives, our vision is rooted in elevating design beyond traditional boundaries. We strive to craft immersive visual experiences that connect, inspire, and spark meaningful conversations across various digital platforms.
+            </p>
+            <p>
+                Through bold innovation and precise craftsmanship, this collection showcases a harmonious balance between contemporary art aesthetics and practical functionality. Every element is designed with intent to refine the user experience.
+            </p>
+            <p>
+                We believe that modern creativity thrives at the intersection of technology and artistic passion. Our commitment to continuous exploration ensures that every piece delivers forward-thinking visual concepts for an evolving audience.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Replace [Your LastName] with your actual last name -->
+        <p>&copy; 2026 [Your LastName] Creatives</p>
+    </footer>
+
+</body>
+</html>
