@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title tag as specified in Annex B -->
-    <title>Mikaella's Creatives</title>
+    <title>Bacala's Creatives</title>
     <style>
-        /* General Page Styling */
+        /* General Page Setup */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -15,18 +15,18 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #618264; /* Sage Green Background */
             color: #333333;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
 
-        /* Header Styling */
+        /* Dusty Rose Header */
         header {
-            background-color: #1a1a1a;
+            background-color: #a35c5d; /* Header Color */
             color: #ffffff;
-            padding: 20px 0 10px 0;
+            padding: 15px 0 10px 0;
             text-align: center;
         }
 
@@ -34,44 +34,48 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            margin-bottom: 15px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
 
-        /* Brand Logo Image Styling */
+        /* Header Logo (Small Circular Image) */
         .brand-logo {
-            width: 35px;
-            height: 35px;
-            object-fit: contain;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffffff;
         }
 
         header h1 {
-            font-size: 24px;
+            font-size: 22px;
             letter-spacing: 1px;
             text-transform: uppercase;
+            font-weight: bold;
         }
 
-        /* Navigation Bar - Dark navigation bar with HOME, ABOUT, GALLERY, CONTACT */
+        /* Dark Navigation Bar */
         nav {
-            background-color: #111111;
-            padding: 12px 0;
+            background-color: #3d3d3d;
+            padding: 10px 0;
+            text-align: center;
         }
 
         nav a {
             color: #ffffff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 18px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 13px;
             letter-spacing: 0.5px;
-            transition: color 0.3s ease;
+            text-transform: uppercase;
         }
 
         nav a:hover {
-            color: #00adb5;
+            color: #f0c0c0;
         }
 
-        /* Main Content Container / Card Area */
+        /* Main Content Container */
         main {
             flex: 1;
             display: flex;
@@ -80,65 +84,82 @@
             padding: 40px 20px;
         }
 
-        /* Centralized White Content Card with Rounded Corners */
+        /* Centralized White Card */
         .card {
-            background-color: #ffffff;
+            background-color: #fcfcfc;
             max-width: 650px;
             width: 100%;
-            padding: 40px;
+            padding: 40px 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
             text-align: center;
         }
 
-        /* Creator Main Profile Image - Centered, circular, dark border */
-        .profile-img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%; /* Circular formatting */
-            border: 4px solid #1a1a1a; /* Dark border */
-            object-fit: cover;
+        /* Main Heading */
+        .card h2 {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: #2e4f32; /* Dark green text */
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* 3 Circular Images Row */
+        .image-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
-        .card h2 {
-            font-size: 26px;
-            margin-bottom: 20px;
-            color: #1a1a1a;
-        }
-
-        /* Three distinct paragraphs describing brand's vision and innovation */
-        .card p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-            text-align: justify;
-            color: #555555;
-            font-size: 15px;
-        }
-
-        /* Additional Showcase Photos Grid */
-        .photo-gallery {
-            display: flex;
-            gap: 15px;
-            margin-top: 25px;
-            justify-content: center;
-        }
-
-        .photo-gallery img {
-            width: 48%;
-            height: 150px;
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #1a1a1a;
             object-fit: cover;
-            border-radius: 8px;
-            border: 1px solid #ddd;
         }
 
-        /* Footer - Black footer with specified copyright text */
+        /* Card Paragraph */
+        .card p {
+            line-height: 1.5;
+            margin-bottom: 25px;
+            text-align: center;
+            color: #555555;
+            font-size: 13px;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Learn More Button */
+        .btn-learn {
+            background-color: #a35c5d;
+            color: #ffffff;
+            border: none;
+            padding: 10px 24px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-learn:hover {
+            background-color: #884748;
+        }
+
+        /* Dusty Rose Footer */
         footer {
-            background-color: #000000;
+            background-color: #a35c5d;
             color: #ffffff;
             text-align: center;
-            padding: 15px 0;
-            font-size: 14px;
+            padding: 12px 0;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -147,10 +168,10 @@
     <!-- Header Section -->
     <header>
         <div class="brand-container">
-            <!-- PHOTO 1: Brand Logo File -->
-            <img src="logo.png" alt="Brand Logo" class="brand-logo">
+            <!-- Header Logo File -->
+            <img src="logo.png" alt="Logo" class="brand-logo">
             
-            <!-- Replace Bacala with your actual last name -->
+            <!-- Replace BACALA with your actual last name -->
             <h1>BACALA CREATIVES</h1>
         </div>
         
@@ -165,36 +186,28 @@
 
     <!-- Main Content Area -->
     <main>
-        <!-- Centralized Content Card -->
+        <!-- Centralized White Card -->
         <div class="card">
-            <!-- PHOTO 2: Circular Profile Picture -->
-            <img src="profile.jpg" alt="Creator Profile Picture" class="profile-img">
+            <h2>EXPERIENCE THE CREATIVE</h2>
             
-            <h2>About the Collection</h2>
+            <!-- Three Circular Images Row -->
+            <div class="image-group">
+                <img src="pic1.jpg" alt="Creative 1" class="profile-img">
+                <img src="pic2.jpg" alt="Creative 2" class="profile-img">
+                <img src="pic3.jpg" alt="Creative 3" class="profile-img">
+            </div>
             
             <p>
-                At Mikaella's Creatives, our vision is rooted in elevating design beyond traditional boundaries. We strive to craft immersive visual experiences that connect, inspire, and spark meaningful conversations across various digital platforms.
-            </p>
-            <p>
-                Through bold innovation and precise craftsmanship, this collection showcases a harmonious balance between contemporary art aesthetics and practical functionality. Every element is designed with intent to refine the user experience.
-            </p>
-            <p>
-                We believe that modern creativity thrives at the intersection of technology and artistic passion. Our commitment to continuous exploration ensures that every piece delivers forward-thinking visual concepts for an evolving audience.
+                Great creative work begins with great collaboration. At Bacala's Creative Studio, we work closely with our clients to understand their goals, explore possibilities, and create thoughtful designs that turn shared ideas into meaningful results.
             </p>
 
-            <!-- PHOTO 3 & 4 (Additional Photos) -->
-            <div class="photo-gallery">
-                <img src="photo1.jpg" alt="Showcase Work 1">
-                <img src="photo2.jpg" alt="Showcase Work 2">
-            </div>
-        </div>   
+            <button class="btn-learn">LEARN MORE</button>
+        </div>
     </main>
-    <img src="profile1.jpg" alt"Creator Profile" class=""circular-img">
-    <img src="profile2.jpg" alt"Creator Profile" class=""circular-img">
-    <img src="profile3.jpg" alt"Creator Profile" class=""circular-img">
+
     <!-- Footer Section -->
     <footer>
-        <!-- Replace Bacala with your actual last name -->
+        <!-- Replace BACALA with your actual last name -->
         <p>&copy; 2026 Bacala's Creatives</p>
     </footer>
 
